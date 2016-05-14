@@ -1,0 +1,56 @@
+
+
+<<!DOCTYPE html>
+<html>
+<head>
+  <title>测试float、display、快元素对齐</title>
+  <style type="text/css">
+    .headerCenter{
+        margin:auto;//设置width的同时，设置margin auto 可以使块元素中心居中
+        width:20%
+    }
+    .left{
+      float:left
+    }
+    .content{
+        float:left;//使块元素水平浮动
+        margin-left:10px;
+        width:70%
+    }
+    .p{
+      display:block //将内联元素转变为块级元素
+    }
+    .center{
+        margin-left:auto;
+      margin-right:auto;
+        width:30%;
+        background-color:#b0e0e6;
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <div id="header">
+      <div class="headerCenter">header</div>
+    </div>
+    <div id="left" class="left">
+      this left
+    </div>
+    <div class="content">
+      <div class="center">
+
+        this is content        
+      <p>
+            this is p content
+        </p>
+
+       
+      </div>
+      
+    </div>
+
+
+  </div>
+</body>
+</html>
+
